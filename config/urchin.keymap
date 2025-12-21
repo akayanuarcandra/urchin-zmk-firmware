@@ -184,7 +184,7 @@
         symbol_layer { //6
             bindings = <
                 &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR      &kp PERCENT     &kp COLON   &none       &none       &none       &mo FUNC
-                &kp CARET   &kp AMPS    &kp ASTRK   &kp MINUS       &kp EQUAL       &kp SEMI    &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI
+                &kp CARET   &kp AMPS    &kp ASTRK   &kp MINUS       &kp EQUAL       &kp SEMI    &kp RSHFT   &kp RALT    &kp RCTRL   &kp RGUI
                 &kp PIPE    &kp TILDE   &kp GRAVE   &kp UNDER       &kp PLUS        &kp BLSH    &none       &none       &none       &none   
                                                     &kp LBRC        &kp RBRC        &none       &none
             >;
@@ -202,7 +202,7 @@
         func_layer { //8
             bindings = <
                 &kp F1  &kp F2  &kp F3  &kp F4      &kp F5      &none       &none       &none       &none       &none
-                &kp F6  &kp F7  &kp F8  &kp F9      &kp F10     &none       &kp LSHFT   &kp LALT    &kp LCTRL   &kp LGUI
+                &kp F6  &kp F7  &kp F8  &kp F9      &kp F10     &none       &kp RSHFT   &kp RALT    &kp RCTRL   &kp RGUI
                 &none   &none   &none   &kp F11     &kp F12     &none       &none       &none       &none       &none   
                                         &kp LBKT    &kp RBKT    &none       &none       
             >;
