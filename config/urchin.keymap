@@ -100,7 +100,7 @@
 		qwerty_layer { //0
             bindings = <
                 &kp Q       &kp W           &kp E           &kp R           &kp T               &kp Y               &kp U                   &kp I           &kp O           &kp P
-                &kp A       &ltp LCTRL S    &ltp LALT D     &ltp LSHFT F    &kp G               &kp H               &rtp RSFT J             &rtp RALT K     &rtp RCTRL L    &rtp RGUI QUOT
+                &kp A       &ltp LCTRL S    &ltp LALT D     &ltp LSHFT F    &kp G               &kp H               &rtp RSFT J             &rtp LALT K     &rtp RCTRL L    &rtp RGUI QUOT
                 &kp Z       &kp X           &kp C           &kp V           &kp B               &kp N               &kp M                   &kp COMMA       &kp DOT         &kp FSLH
                                                             &lt NAV TAB     &lt MOUSE ENTER     &lt NUMBER SPACE    &lt SYMBOL BACKSPACE
                 >;
@@ -109,7 +109,7 @@
 		colemak_layer { //1
             bindings = <
                 &kp Q   &kp W           &kp F           &kp P           &kp G               &kp J               &kp L                   &kp U           &kp Y           &kp QUOT
-                &kp A   &ltp LCTRL R    &ltp LALT S     &ltp LSHFT T    &kp D               &kp H               &ltp RSHFT N            &ltp RALT E     &ltp RCTRL I    &rtp RGUI O
+                &kp A   &ltp LCTRL R    &ltp LALT S     &ltp LSHFT T    &kp D               &kp H               &ltp RSHFT N            &ltp LALT E     &ltp RCTRL I    &rtp RGUI O
                 &kp Z   &kp X           &kp C           &kp V           &kp B               &kp K               &kp M                   &kp COMMA       &kp DOT         &kp SLASH
                                                         &lt NAV TAB     &lt MOUSE ENTER     &lt NUMBER SPACE    &lt SYMBOL BACKSPACE
             >;
@@ -145,7 +145,7 @@
         number_layer { //5
             bindings = <
                 &kp N1      &kp N2      &kp N3      &kp N4          &kp N5          &none       &none       &none       &none       &mo BLUETOOTH
-                &kp N6      &kp N7      &kp N8      &kp N9          &kp N0          &none       &kp RSHFT   &kp RALT    &kp RCTRL   &kp RGUI
+                &kp N6      &kp N7      &kp N8      &kp N9          &kp N0          &none       &kp RSHFT   &kp LALT    &kp RCTRL   &kp RGUI
                 &none       &none       &none       &none           &none           &none       &none       &none       &bootloader &sys_reset
                                                     &kp LPAR        &kp RPAR        &none       &none
             >;
@@ -154,7 +154,7 @@
         symbol_layer { //6
             bindings = <
                 &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR      &kp PERCENT     &kp COLON   &none       &none       &none       &mo FUNC
-                &kp CARET   &kp AMPS    &kp ASTRK   &kp MINUS       &kp EQUAL       &kp SEMI    &kp RSHFT   &kp RALT    &kp RCTRL   &kp RGUI
+                &kp CARET   &kp AMPS    &kp ASTRK   &kp MINUS       &kp EQUAL       &kp SEMI    &kp RSHFT   &kp LALT    &kp RCTRL   &kp RGUI
                 &kp PIPE    &kp TILDE   &kp GRAVE   &kp UNDER       &kp PLUS        &kp BSLH    &none       &none       &none       &none
                                                     &kp LBRC        &kp RBRC        &none       &none
             >;
@@ -172,7 +172,7 @@
         func_layer { //8
             bindings = <
                 &kp F1  &kp F2  &kp F3  &kp F4      &kp F5      &none       &none       &none       &none       &none
-                &kp F6  &kp F7  &kp F8  &kp F9      &kp F10     &none       &kp RSHFT   &kp RALT    &kp RCTRL   &kp RGUI
+                &kp F6  &kp F7  &kp F8  &kp F9      &kp F10     &none       &kp RSHFT   &kp LALT    &kp RCTRL   &kp RGUI
                 &none   &none   &none   &kp F11     &kp F12     &none       &none       &none       &none       &none
                                         &kp LBKT    &kp RBKT    &none       &none
             >;
