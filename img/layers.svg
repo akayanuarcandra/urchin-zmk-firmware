@@ -1,7 +1,3 @@
-## A customised layout for my urchin keyboard
-
-Here's the current layout
-
 <svg width="1587" height="9416" viewBox="0 0 1587 9416" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="2" y="345" width="124" height="124" rx="13" fill="white"/>
 <rect x="2" y="345" width="124" height="124" rx="13" stroke="black" stroke-width="4"/>
@@ -1008,4 +1004,3 @@ Here's the current layout
 </linearGradient>
 </defs>
 </svg>
-
