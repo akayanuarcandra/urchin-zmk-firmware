@@ -2,13 +2,13 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 700  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 10
 
 &mmv {
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
-    time-to-max-speed-ms = <0>;
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
 };
 
