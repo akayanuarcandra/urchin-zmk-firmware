@@ -16,13 +16,16 @@
 #define QWERTY 0
 #define COLEMAK 1
 #define GAME 2
-#define NAV 3
-#define MOUSE 4
-#define NUMBER 5
-#define SYMBOL 6
-#define MEDIA 7
-#define FUNC 8
-#define BLUETOOTH 9
+#define OSU 3
+#define GD 4
+#define NAV 5
+#define MOUSE 6
+#define NUMBER 7
+#define SYMBOL 8
+#define MEDIA 9
+#define FUNC 10
+#define BLUETOOTH 11
+#define LAYERS 12
 // -----------------
 
 &soft_off {
@@ -129,16 +132,34 @@
                 >;
         };
 
-        nav_layer { //3
+        osu_layer { //3
+            bindings = <
+                &kp Q   &kp W   &kp E   &kp R       &kp T       &kp Y               &kp U   &kp I       &kp O   &kp P
+                &kp A   &kp S   &kp D   &kp F       &kp G       &kp H               &kp J   &kp K       &kp L   &rtp LSHFT QUOT
+                &kp Z   &kp X   &kp C   &kp V       &kp B       &kp N               &kp M   &kp COMMA   &kp DOT &kp SLASH
+                                    &lt NAV LALT    &kp SPACE   &lt NUMBER ENTER    &lt FUNC BACKSPACE
+                >;
+        };
+
+        gd_layer { //4
+            bindings = <
+                &kp A   &kp A   &kp W   &kp D       &kp D       &kp LEFT     &kp LEFT           &kp UP     &kp RIGHT    &kp RIGHT
+                &kp A   &kp A   &kp S   &kp D       &kp D       &kp LEFT     &kp LEFT           &kp DOWN   &kp RIGHT    &kp RIGHT
+                &kp A   &kp A   &kp S   &kp D       &kp D       &kp LEFT     &kp LEFT           &kp DOWN   &kp RIGHT    &kp RIGHT
+                                        &lt NAV ESC &kp SPACE   &kp UP    &lt FUNC BACKSPACE
+                >;
+        };
+
+        nav_layer { //5
             bindings = <
                 &lt MEDIA ESC   &none       &none       &none       &none       &kp PSCRN       &kp INS         &kp CAPS    &caps_word  &terminal
                 &kp LGUI        &kp LCTRL   &kp LALT    &kp LSHFT   &kp ENTER   &kp LEFT        &kp DOWN        &kp UP      &kp RIGHT   &mkp MB5
-                &none           &none       &none       &none       &none       &kp HOME        &kp PG_DN       &kp PG_UP   &kp END     &mkp MB4
+                &mo LAYERS      &none       &none       &none       &none       &kp HOME        &kp PG_DN       &kp PG_UP   &kp END     &mkp MB4
                                                         &none       &none       &kp SPACE       &kp DELETE
             >;
         };
 
-        mouse_layer { //4
+        mouse_layer { //6
             bindings = <
                 &none       &none       &none       &soft_off   &kp ENTER   &kp K_CUT       &kp K_COPY      &kp K_PASTE     &none           &none
                 &kp LGUI    &kp LCTRL   &kp LALT    &kp LSHFT   &mkp MCLK   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &mkp MB5
@@ -147,7 +168,7 @@
             >;
         };
 
-        number_layer { //5
+        number_layer { //7
             bindings = <
                 &kp N1      &kp N2      &kp N3      &kp N4          &kp N5          &none       &soft_off   &none       &none       &mo BLUETOOTH
                 &kp N6      &kp N7      &kp N8      &kp N9          &kp N0          &none       &kp RSHFT   &kp LALT    &kp RCTRL   &kp RGUI
@@ -156,7 +177,7 @@
             >;
         };
 
-        symbol_layer { //6
+        symbol_layer { //8
             bindings = <
                 &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR      &kp PERCENT     &kp COLON   &none       &none       &none       &mo FUNC
                 &kp CARET   &kp AMPS    &kp ASTRK   &kp MINUS       &kp EQUAL       &kp SEMI    &kp RSHFT   &kp LALT    &kp RCTRL   &kp RGUI
@@ -165,7 +186,7 @@
             >;
         };
 
-        media_layer { //7
+        media_layer { //9
             bindings = <
                 &none       &to COLEMAK &to QWERTY  &to GAME    &none    &none           &kp C_MUTE      &none       &none       &none
                 &kp LGUI    &kp LCTRL   &kp LALT    &kp LSHFT   &none    &kp C_BRI_UP    &kp C_VOL_UP    &kp C_PP    &none       &none
@@ -174,7 +195,7 @@
             >;
         };
 
-        func_layer { //8
+        func_layer { //10
             bindings = <
                 &kp F1  &kp F2  &kp F3  &kp F4      &kp F5      &none       &none       &none       &none       &none
                 &kp F6  &kp F7  &kp F8  &kp F9      &kp F10     &none       &kp RSHFT   &kp LALT    &kp RCTRL   &kp RGUI
@@ -183,13 +204,22 @@
             >;
         };
 
-        bluetooth_layer { //9
+        bluetooth_layer { //11
             bindings = <
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &none           &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3   &none
                 &bt BT_SEL 4    &none           &bt BT_PRV      &bt BT_NXT      &none           &bt BT_DISC 4   &none           &none           &none           &none
                 &none           &none           &none           &none           &none           &out OUT_BLE    &out OUT_USB    &bt BT_CLR_ALL  &bt BT_CLR      &none
                                                                 &none           &none           &none           &none
                 >;
+        };
+
+        layers_layer { //12
+            bindings = <
+                &none   &none   &to OSU     &none       &none   &none   &none   &none   &none   &none
+                &none   &none   &to GAME    &to QWERTY  &none   &none   &none   &none   &none   &none
+                &none   &none   &to GD      &to COLEMAK &none   &none   &none   &none   &none   &none
+                                            &none       &none   &none   &none
+            >;
         };
 	};
 };
